@@ -13,6 +13,7 @@
 		DC81B03C22490C63004EED00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC81B03A22490C63004EED00 /* Main.storyboard */; };
 		DC81B04522490E8B004EED00 /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B04422490E8B004EED00 /* Pixel.swift */; };
 		DC81B047224921E7004EED00 /* PixelSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B046224921E7004EED00 /* PixelSet.swift */; };
+		DC81B04922492689004EED00 /* NSImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B04822492689004EED00 /* NSImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		DC81B03E22490C63004EED00 /* Ray_Tracing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ray_Tracing.entitlements; sourceTree = "<group>"; };
 		DC81B04422490E8B004EED00 /* Pixel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
 		DC81B046224921E7004EED00 /* PixelSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelSet.swift; sourceTree = "<group>"; };
+		DC81B04822492689004EED00 /* NSImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				DC81B03622490C62004EED00 /* ViewController.swift */,
 				DC81B04422490E8B004EED00 /* Pixel.swift */,
 				DC81B046224921E7004EED00 /* PixelSet.swift */,
+				DC81B04822492689004EED00 /* NSImage+Extension.swift */,
 				DC81B03822490C63004EED00 /* Assets.xcassets */,
 				DC81B03A22490C63004EED00 /* Main.storyboard */,
 				DC81B03D22490C63004EED00 /* Info.plist */,
@@ -141,6 +144,7 @@
 			files = (
 				DC81B03722490C62004EED00 /* ViewController.swift in Sources */,
 				DC81B04522490E8B004EED00 /* Pixel.swift in Sources */,
+				DC81B04922492689004EED00 /* NSImage+Extension.swift in Sources */,
 				DC81B03522490C62004EED00 /* AppDelegate.swift in Sources */,
 				DC81B047224921E7004EED00 /* PixelSet.swift in Sources */,
 			);

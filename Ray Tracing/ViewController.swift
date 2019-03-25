@@ -9,11 +9,27 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    let imageView = NSImageView()
+    
+    var image: NSImage? {
+        let pixels = PixelSet(width: 200, height: 200, initialValue: Pixel.red)
+        return NSImage(from: pixels)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.view.addSubview(imageView)
+        self.imageView.image = self.image
+        setupConstraints()
+    }
+    
+    func setupConstraints() {
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
     }
 
     override var representedObject: Any? {

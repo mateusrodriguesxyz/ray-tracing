@@ -9,6 +9,11 @@
 import Foundation
 import simd
 
+enum Projection {
+    case orthographic
+    case oblique
+}
+
 class Camera {
     
     var origin: float3
@@ -27,10 +32,19 @@ class Camera {
         self.bottom = bottom
     }
     
-    func getRay(u: Float, v: Float) -> Ray {
+    func getRay(u: Float, v: Float, projection: Projection) -> Ray {
         let (ww, uu, vv) = origin.basis
-        let direction = -focalDistance*ww + u*uu + v*vv
-        return Ray(origin: self.origin, direction: direction)
+        switch projection {
+        case .orthographic:
+            let origin = self.origin + u*uu + v*vv
+            return Ray(origin: origin, direction: -ww)
+        case .oblique:
+            let direction = -focalDistance*ww + u*uu + v*vv
+            return Ray(origin: self.origin, direction: direction)
+        }
+        
+        
+        
     }
     
 }

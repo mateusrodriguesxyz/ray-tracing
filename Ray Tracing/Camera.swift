@@ -9,11 +9,6 @@
 import Foundation
 import simd
 
-enum Projection {
-    case orthographic
-    case oblique
-}
-
 class Camera {
     
     var origin: float3

@@ -14,6 +14,9 @@
 		DC81B04522490E8B004EED00 /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B04422490E8B004EED00 /* Pixel.swift */; };
 		DC81B047224921E7004EED00 /* PixelSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B046224921E7004EED00 /* PixelSet.swift */; };
 		DC81B04922492689004EED00 /* NSImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B04822492689004EED00 /* NSImage+Extension.swift */; };
+		DC81B04B224937C3004EED00 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B04A224937C3004EED00 /* Ray.swift */; };
+		DC81B04D2249389A004EED00 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B04C2249389A004EED00 /* Camera.swift */; };
+		DC81B04F22493B4C004EED00 /* float3+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B04E22493B4C004EED00 /* float3+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		DC81B04422490E8B004EED00 /* Pixel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
 		DC81B046224921E7004EED00 /* PixelSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelSet.swift; sourceTree = "<group>"; };
 		DC81B04822492689004EED00 /* NSImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Extension.swift"; sourceTree = "<group>"; };
+		DC81B04A224937C3004EED00 /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
+		DC81B04C2249389A004EED00 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		DC81B04E22493B4C004EED00 /* float3+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float3+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,11 @@
 			children = (
 				DC81B03422490C62004EED00 /* AppDelegate.swift */,
 				DC81B03622490C62004EED00 /* ViewController.swift */,
+				DC81B04A224937C3004EED00 /* Ray.swift */,
+				DC81B04C2249389A004EED00 /* Camera.swift */,
 				DC81B04422490E8B004EED00 /* Pixel.swift */,
 				DC81B046224921E7004EED00 /* PixelSet.swift */,
+				DC81B04E22493B4C004EED00 /* float3+Extension.swift */,
 				DC81B04822492689004EED00 /* NSImage+Extension.swift */,
 				DC81B03822490C63004EED00 /* Assets.xcassets */,
 				DC81B03A22490C63004EED00 /* Main.storyboard */,
@@ -144,8 +153,11 @@
 			files = (
 				DC81B03722490C62004EED00 /* ViewController.swift in Sources */,
 				DC81B04522490E8B004EED00 /* Pixel.swift in Sources */,
+				DC81B04F22493B4C004EED00 /* float3+Extension.swift in Sources */,
+				DC81B04B224937C3004EED00 /* Ray.swift in Sources */,
 				DC81B04922492689004EED00 /* NSImage+Extension.swift in Sources */,
 				DC81B03522490C62004EED00 /* AppDelegate.swift in Sources */,
+				DC81B04D2249389A004EED00 /* Camera.swift in Sources */,
 				DC81B047224921E7004EED00 /* PixelSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

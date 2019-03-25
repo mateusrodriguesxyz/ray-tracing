@@ -18,6 +18,7 @@
 		DC81B04D2249389A004EED00 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B04C2249389A004EED00 /* Camera.swift */; };
 		DC81B04F22493B4C004EED00 /* float3+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B04E22493B4C004EED00 /* float3+Extension.swift */; };
 		DC81B05122494F07004EED00 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B05022494F07004EED00 /* Sphere.swift */; };
+		DC81B05322496FF1004EED00 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81B05222496FF1004EED00 /* Light.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		DC81B04C2249389A004EED00 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		DC81B04E22493B4C004EED00 /* float3+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float3+Extension.swift"; sourceTree = "<group>"; };
 		DC81B05022494F07004EED00 /* Sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
+		DC81B05222496FF1004EED00 /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				DC81B03422490C62004EED00 /* AppDelegate.swift */,
 				DC81B03622490C62004EED00 /* ViewController.swift */,
+				DC81B05222496FF1004EED00 /* Light.swift */,
 				DC81B04A224937C3004EED00 /* Ray.swift */,
 				DC81B04C2249389A004EED00 /* Camera.swift */,
 				DC81B04422490E8B004EED00 /* Pixel.swift */,
@@ -160,6 +163,7 @@
 				DC81B04F22493B4C004EED00 /* float3+Extension.swift in Sources */,
 				DC81B04B224937C3004EED00 /* Ray.swift in Sources */,
 				DC81B04922492689004EED00 /* NSImage+Extension.swift in Sources */,
+				DC81B05322496FF1004EED00 /* Light.swift in Sources */,
 				DC81B03522490C62004EED00 /* AppDelegate.swift in Sources */,
 				DC81B04D2249389A004EED00 /* Camera.swift in Sources */,
 				DC81B047224921E7004EED00 /* PixelSet.swift in Sources */,

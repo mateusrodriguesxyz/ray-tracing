@@ -23,6 +23,10 @@ class Camera {
     var top: Float
     var bottom: Float
     
+    var settings: (Float, Float, Float, Float) {
+        return (left, right, top, bottom)
+    }
+    
     init(origin: float3, focalDistance: Float, left: Float, right: Float, top: Float, bottom: Float) {
         self.origin = origin
         self.focalDistance = focalDistance
@@ -35,15 +39,13 @@ class Camera {
     func getRay(u: Float, v: Float, projection: Projection) -> Ray {
         let (ww, uu, vv) = origin.basis
         switch projection {
-        case .orthographic:
-            let origin = self.origin + u*uu + v*vv
-            return Ray(origin: origin, direction: -ww)
-        case .oblique:
-            let direction = -focalDistance*ww + u*uu + v*vv
-            return Ray(origin: self.origin, direction: direction)
+            case .orthographic:
+                let origin = self.origin + u*uu + v*vv
+                return Ray(origin: origin, direction: -ww)
+            case .oblique:
+                let direction = -focalDistance*ww + u*uu + v*vv
+                return Ray(origin: self.origin, direction: direction)
         }
-        
-        
         
     }
     

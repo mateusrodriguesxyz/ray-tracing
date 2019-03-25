@@ -6,17 +6,33 @@
 //  Copyright © 2019 Mateus Rodrigues. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 import simd
 
 class Sphere {
     
     let center: float3
     let radius: Float
+    let color: NSColor
     
-    init(center: float3, radius: Float) {
+    var kRed: Float {
+        return Float(color.redComponent)
+    }
+    var kGreen: Float {
+        return Float(color.greenComponent)
+    }
+    var kBlue: Float {
+        return Float(color.blueComponent)
+    }
+    
+    var sRed: Float = 0.5
+    var sGreen: Float = 0.5
+    var sBlue: Float = 0.5
+    
+    init(center: float3, radius: Float, color: NSColor) {
         self.center = center
         self.radius = radius
+        self.color = color
     }
     
     func hit(with ray: Ray) -> Float? {

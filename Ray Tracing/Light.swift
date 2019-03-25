@@ -24,6 +24,8 @@ class Light {
         return Float(color.blueComponent)
     }
     
+    var shading: Shading = .lambert
+    
     init(origin: float3, color: NSColor) {
         self.origin = origin
         self.color = color

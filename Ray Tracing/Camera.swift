@@ -22,6 +22,8 @@ class Camera {
         return (left, right, top, bottom)
     }
     
+    var projection: Projection = .oblique
+    
     init(origin: float3, focalDistance: Float, left: Float, right: Float, top: Float, bottom: Float) {
         self.origin = origin
         self.focalDistance = focalDistance

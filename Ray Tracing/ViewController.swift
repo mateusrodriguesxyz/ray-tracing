@@ -19,19 +19,12 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         self.view.addSubview(imageView)
         setupConstraints()
-        
-        let e = float3(5, 5, 0)
-        
-        let l: Float = -5.0
-        let r: Float = 5.0
-        let t: Float = 5.0
-        let b: Float = -5.0
-        
+
         let sphere = Sphere(center: float3.zero, radius: 3, color: #colorLiteral(red: 0, green: 0.7941015959, blue: 0.3129233718, alpha: 1))
-        
-        let camera = Camera(origin: e, focalDistance: 15, left: l, right: r, top: t, bottom: b)
-        
+        let camera = Camera(origin: float3(5, 5, 0), focalDistance: 15, left: -5, right: 5, top: 5, bottom: -5)
+        camera.projection = .orthographic
         let light = Light(origin: float3(4, 4, 4), color: #colorLiteral(red: 0.8, green: 0.8, blue: 0.8, alpha: 1))
+        light.shading = .blinnPhong
         
         rayTrace(sphere: sphere, camera: camera, light: light, at: &pixels)
         
@@ -51,9 +44,9 @@ class ViewController: NSViewController {
             let u = l + ((r - l)*(Float(i) + 0.5))/Float(width)
             let v = b + ((t - b)*(Float(j) + 0.5))/Float(height)
             
-            let ray = camera.getRay(u: u, v: v, projection: .orthographic)
+            let ray = camera.getRay(u: u, v: v, projection: camera.projection)
             
-            let color = getColor(sphere, ray, camera: camera, light: light, shading: .blinnPhong)
+            let color = getColor(sphere, ray, camera: camera, light: light, shading: light.shading)
             
             return Pixel(red: UInt8(color.x*255), green: UInt8(color.y*255), blue: UInt8(color.z*255))
         }
